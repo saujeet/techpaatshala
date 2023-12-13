@@ -16,9 +16,9 @@ console.log(evenodd.sort(function (a, b) { return a - b; }));
 
 // arrow functions
 
-let num = 5;
+let num1 = 5;
 let square = num => num * num;
-console.log(square);
+console.log(square(num1));
 
 // destructor
 
@@ -31,3 +31,22 @@ const { name, age } = person;
 
 // array methods
 
+// Map, filter, reduce
+
+let num2 = 10;
+let arr1 = [1, 2, 3, 4]
+
+let addNum = arr1.map(n => n + num2);
+console.log(addNum);
+
+let even1 = arr1.filter(n => {
+    if (n % 2 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+})
+console.log(even1);
+
+let arraySum = arr1.reduce((acc, currVal) => acc + currVal);
+console.log(arraySum);
